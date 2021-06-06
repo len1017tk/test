@@ -4,9 +4,11 @@ $excel = New-Object -ComObject Exce.Applicaton
 $excel.Visible = $False
 # アラート表示
 $excel.DisplayAlerts = $False
+$excel.DisplayAlerts = $True
 
 # １ポイントを１センチに変換
 $centimetersToPoint = $excel.CentimetersToPoints(1)
+
 
 #ヘッダーを出力
 Write-Host("ファイル名："            + "," +
